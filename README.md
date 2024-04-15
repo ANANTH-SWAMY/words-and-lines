@@ -1,4 +1,4 @@
-# words-and-lines
+# Words and Lines
 A simple webapp writtent to illustrate the use of go routines and mutex locks.
 
 It's a project written for the golang special topic course.
