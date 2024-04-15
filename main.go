@@ -94,6 +94,7 @@ func Count(w http.ResponseWriter, r *http.Request){
                 }
 
     wg.Add(2)
+
     go countWords()
     go countLines()
 
