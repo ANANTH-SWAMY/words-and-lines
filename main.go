@@ -59,7 +59,8 @@ func (r *Response) words(s string) {
 func (r *Response) lines(s string) {
     r.mutex.Lock()
     defer r.mutex.Unlock()
-    count := strconv.Itoa(strings.Count(s, "\n"))
+	lines := strings.Split(s, "\\n")
+    count := strconv.Itoa(len(lines))
     r.res = strings.Replace(r.res, "{{lines}}", count, -1)
 }
 
